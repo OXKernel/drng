@@ -19,3 +19,5 @@ Software is provided on an AS-IS basis. Future research is needed.
 
 # Author
 Roger Doss
+
+opensource [at] rdoss [dot] com
