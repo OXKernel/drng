@@ -20,56 +20,56 @@
 int
 main()
 {
-	/* All functions need to be tested. bit_rol is wrong. */
-	int i = 0;
+    /* All functions need to be tested. bit_rol is wrong. */
+    int i = 0;
     /* Test the core bit map functionality. */
-	bit_t *bmap = bit_init(32);
-	bit_set(bmap, 0,  1);
+    bit_t *bmap = bit_init(32);
+    bit_set(bmap, 0,  1);
     bit_set(bmap, 1,  1);
     bit_set(bmap, 30, 1);
-	bit_set(bmap, 31, 0);
+    bit_set(bmap, 31, 0);
     bit_print(stdout,bmap);
     printf("\n");
 
     printf("bit_rol\n");
-	bit_rol(bmap);
+    bit_rol(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     printf("bit_ror\n");
     bit_ror(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     printf("bit_ror\n");
     bit_ror(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     printf("bit_rol\n");
     bit_rol(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     printf("bit_ror\n");
     bit_ror(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     printf("bit_ror\n");
     bit_ror(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     printf("bit_ror\n");
     bit_ror(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     printf("bit_rol\n");
     bit_rol(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     printf("bit_rol\n");
     bit_rol(bmap);
@@ -84,22 +84,22 @@ main()
     printf("bit_rshift\n");
     bit_rshift(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     printf("bit_rshift\n");
     bit_rshift(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     printf("bit_lshift\n");
     bit_lshift(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     printf("bit_lshift\n");
     bit_lshift(bmap);
     bit_print(stdout,bmap);
-	printf("\n");
+    printf("\n");
 
     bit_set(bmap, 4, 1);
     bit_set(bmap, 5, 1);
@@ -116,7 +116,7 @@ main()
     bit_print(stdout,bmap);
     printf("\n");
 
-	bit_free(bmap);
+    bit_free(bmap);
 
 }/* main */
 /*
