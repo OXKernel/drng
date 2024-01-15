@@ -48,8 +48,6 @@ main()
   for (int i = 0; i < 1024; ++i) {
 	  for (int j = 0; j < 1024; ++j) {
       res = drng_rand(rng);
-      //res = rand();
-      //char bit = res % 17 % 2;
       char bit = res % 2;
       if(bit)  al_put_pixel(i,j, al_map_rgb(255,255,255));
       if(!bit) al_put_pixel(i,j, al_map_rgb(  0,  0,  0));
