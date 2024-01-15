@@ -16,14 +16,15 @@
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 # 
 #
-CFLAGS=-D_INT
-OBJS=drng.o drng_test.o
+CFLAGS=-D_INT -g
+OBJS=drng.o drng_test.o drng_bitmap_test.o
 
 ALL: $(OBJS)
-	gcc $(OBJS) -o drng_test -L./bits -lbits
+	gcc drng.o drng_test.o -o drng_test -L./bits -lbits
+	gcc drng.o drng_bitmap_test.o -o drng_bitmap_test -L./bits -lbits -lallegro -lallegro_image
 
 LIB: $(OBJS)
 	ar rv libdrng.a drng.o
 
 clean:
-	rm -f *.o core drng_test
+	rm -f *.o core drng_test drng_bitmap_test
